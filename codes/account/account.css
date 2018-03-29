@@ -1,0 +1,8 @@
+section ul{list-style:none;padding:0;width:240px}
+section ul li{margin:10px 0}
+section ul li hr{border-style:solid;border-bottom:none;border-color:#afafaf}
+.page_next{float:right}
+section ul li button{margin-top:-3px;float:right}
+#current_domain{font-size:15px}
+button{background:#5ea8f3;border:none;outline:none;color:white;padding:2px 10px;border-radius:2px;cursor:pointer}
+button:hover{background:#4a75e3}

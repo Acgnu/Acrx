@@ -1,0 +1,24 @@
+{
+  "name": "Acgnu+",
+  "description": "老司机的辛酸发车史",
+  "version": "0.9",
+  "background": {
+    "scripts": ["lib/jquery.min.js", "mylib/tools.js", "codes/svc/service.js"]
+  },
+  "permissions": [
+	"storage",
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "老司机多年珍藏里番宝典，点即开车！",
+      "default_icon": "images/sys/icon.png",
+      "default_popup": "codes/account/account.html"
+  },
+  "icons":{"128":"images/sys/loli128.png"},
+  "content_scripts": [{
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["lib/jquery.min.js", "mylib/tools.js", "codes/svc/inject.js"],
+	  "run_at":"document_end"
+    }],
+  "manifest_version": 2
+}
