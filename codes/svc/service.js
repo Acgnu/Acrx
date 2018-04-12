@@ -7,7 +7,7 @@ var remAccount = {};	//用于临时存储刚刚键入的账号密码以及域名
 //当页面刷新的时候触发
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 	//针对部分跳转的页面(例如百度)，重绘背景
-	chrome.tabs.executeScript(null, {file:"codes/svc/inject.js", allFrames: true});
+	//chrome.tabs.executeScript(null, {file:"codes/svc/inject.js", allFrames: true});
 	
 	//更新完毕的时候触发
 	if(changeInfo.status == 'complete'){
